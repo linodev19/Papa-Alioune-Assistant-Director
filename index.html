@@ -908,6 +908,47 @@
                 font-size: 1.1rem;
             }
         }
+        .production-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.production-card{
+    background:var(--color-dark-gray);
+    border:1px solid rgba(230,57,70,.2);
+    border-radius:4px;
+    overflow:hidden;
+    transition:all .3s ease;
+}
+
+.production-card:hover{
+    transform:translateY(-5px);
+    border-color:var(--color-red);
+    box-shadow:0 8px 32px rgba(230,57,70,.2);
+}
+
+.production-card img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.production-info{
+    padding:1rem;
+}
+
+.production-info h4{
+    color:var(--color-white);
+    margin-bottom:.5rem;
+    font-family:var(--font-heading);
+}
+
+.production-info p{
+    color:var(--color-gray-medium);
+    font-size:.9rem;
+}
     </style>
 </head>
 <body>
@@ -935,9 +976,9 @@
             </video>
         </div>
         <div class="hero-content">
-            <h1>Réalisations</h1>
-            <p class="subtitle">Assistant Réalisateur</p>
-            <p>Assistant réalisateur basé à Dakar, j'interviens sur la préparation et la coordination de productions audiovisuelles. Dépouillement, plan de travail, organisation des équipes et suivi de tournage : je veille à transformer les intentions créatives en une exécution efficace sur le terrain.</p>
+            <h1>Je suis</h1>
+            <p class="subtitle">Assistant Réalisateur / Assistant Director</p>
+            <p>Basé à Dakar, j'interviens sur la préparation et la coordination de productions audiovisuelles. Dépouillement, plan de travail, organisation des équipes et suivi de tournage : je veille à transformer les intentions créatives en une exécution efficace sur le terrain.</p>
             <a href="#portfolio" class="cta-button">Explorer le Portfolio</a>
             <a href="#showreel" class="cta-button secondary">Voir le Showreel</a>
         </div>
@@ -951,7 +992,7 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>Qui suis-je ?</h3>
-                <p>Assistant réalisateur basé à Dakar, j'accompagne les productions audiovisuelles dans leur préparation et leur exécution. Mon travail consiste à organiser, coordonner et anticiper afin de garantir le bon déroulement des tournages et de soutenir la vision créative du réalisateur.</p>
+                <p>Je suis Assistant réalisateur basé à Dakar, j'accompagne les productions audiovisuelles dans leur préparation et leur exécution. Mon travail consiste à organiser, coordonner et anticiper afin de garantir le bon déroulement des tournages et de soutenir la vision créative du réalisateur.</p>
             </div>
             <div>
                 <h3 style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 600; color: var(--color-red); margin-bottom: 1.5rem;">Compétences Principales</h3>
@@ -1058,16 +1099,162 @@
                     </div>
                 </div>
 
-               <span class="category-badge">Séries En Production/ Post-Production</span>
-
-                <span class="category-badge">Série 1</span>
-
-               <div class="video-card">
-                    <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007707/Capture_d_%C3%A9cran_2026-09-21_153940_k6x7hn.png" ></img>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/-4h1vLPwJmo" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="video-card-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
                 </div>
+
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/aiHMZL6LCUE" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="video-card-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+
+              
 
             </div>
         </div>
+
+        <div style="margin-bottom:4rem; margin-top:4rem;">
+    <span class="category-badge">En Production</span>
+
+    <h3 style="
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        color: var(--color-white);
+    ">
+        Projets en Production / Post-Production
+    </h3>
+
+    <div class="production-grid">
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007707/Capture_d_%C3%A9cran_2026-09-21_153742_azdx9a.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 2</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007713/Capture_d_%C3%A9cran_2026-09-21_155042_quzkpm.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 2</h4>
+                <p> Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007711/Capture_d_%C3%A9cran_2026-09-21_154928_d4z5fu.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 2</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007713/Capture_d_%C3%A9cran_2026-09-21_154130_f9nl5h.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 2</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007712/Capture_d_%C3%A9cran_2026-09-21_154353_sbcuuu.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 2</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007714/Capture_d_%C3%A9cran_2026-09-21_155119_zh1ve7.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 2</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007719/Capture_d_%C3%A9cran_2026-09-21_155734_evbbgo.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 3</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007717/Capture_d_%C3%A9cran_2026-09-21_155537_djzqnn.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 3</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007717/Capture_d_%C3%A9cran_2026-09-21_155629_e69ptz.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 3</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007717/Capture_d_%C3%A9cran_2026-09-21_155422_zecj3o.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 3</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007721/Capture_d_%C3%A9cran_2026-09-21_155917_hkfdcx.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 3</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+        <div class="production-card">
+            <img
+                src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1790007718/Capture_d_%C3%A9cran_2026-09-21_155337_a3ni1m.png"
+                alt="Projet en production">
+            <div class="production-info">
+                <h4>Série 3</h4>
+                <p>Rôle: 1er Assistant Réalisateur</p>
+            </div>
+        </div>
+
+    </div>
+</div>
 
         <!-- Spots Publicitaires -->
         <div style="margin-bottom: 4rem;">
@@ -1147,12 +1334,11 @@
         
         <div class="showreel-container">
             <div class="showreel-video">
-                <iframe src="https://player.vimeo.com/video/1211844180" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://player.vimeo.com/video/1228999134?h=8d6c2d52fc" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="showreel-info">
                 <h3>Showreel 2026</h3>
-                <p>Une sélection des meilleurs moments de mes réalisations audiovisuelles. Ce showreel présente ma polyvalence et mon expertise dans différents domaines de la production cinématographique.</p>
-                <p>Du concept à la post-production, découvrez comment je transforme les visions en réalités cinématographiques captivantes.</p>
+                <p>Une sélection des meilleurs moments de mes réalisations audiovisuelles. </p>
                 
             </div>
         </div>
@@ -1160,7 +1346,7 @@
 
     <section class="gallery" id="coulisses">
         <h2 class="section-title">Clients et Collaborations</h2>
-        <p class="section-subtitle">Des collaborations qui ont contribué à enrichir mon expérience professionnelle et à renforcer mon expertise dans l’audiovisuel et la création de contenus.</p>
+        <p class="section-subtitle">Des collaborations qui ont contribué à enrichir mon expérience professionnelle et à renforcer mon expertise dans l’audiovisuel et le Cinéma.</p>
         
         <div class="gallery-grid">
             <div class="gallery-item" >
@@ -1171,36 +1357,6 @@
             </div>
             <div class="gallery-item">
                 <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1786366673/IMG_1961_npjzoh.jpg" alt="Coulisses plateau 2">
-                <div class="gallery-overlay">
-                    <div class="gallery-icon">🔍</div>
-                </div>
-            </div>
-            <div class="gallery-item" >
-                <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1786366673/IMG_1958.JPG_buse6i.jpg" alt="Coulisses plateau 3">
-                <div class="gallery-overlay">
-                    <div class="gallery-icon">🔍</div>
-                </div>
-            </div>
-            <div class="gallery-item" >
-                <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1786366673/IMG_1960.JPG_sbqqhz.jpg" alt="Coulisses plateau 4">
-                <div class="gallery-overlay">
-                    <div class="gallery-icon">🔍</div>
-                </div>
-            </div>
-            <div class="gallery-item" >
-                <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1786367516/IMG_1964_ri3rli.jpg" alt="Coulisses plateau 5">
-                <div class="gallery-overlay">
-                    <div class="gallery-icon">🔍</div>
-                </div>
-            </div>
-            <div class="gallery-item" >
-                <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1786367516/IMG_1965.JPG_axusjd.jpg" alt="Coulisses plateau 6">
-                <div class="gallery-overlay">
-                    <div class="gallery-icon">🔍</div>
-                </div>
-            </div>
-            <div class="gallery-item" >
-                <img src="https://res.cloudinary.com/dtdogwfcz/image/upload/v1786366689/WhatsApp_Image_2024-09-24_%C3%A0_19.37.57_f5801600-removebg-preview_ffkkav.png" alt="Coulisses plateau 7">
                 <div class="gallery-overlay">
                     <div class="gallery-icon">🔍</div>
                 </div>
